@@ -156,8 +156,8 @@ mapa_rs_mt <- ggplot() +
     data = mapa_rs,
     aes(geometry = geom),
     fill = "white",
-    color = "grey80",
-    size = 0.01
+    color = "grey60",
+    size = 0.05
   ) +
   geom_sf(
     data = mapa_meso_regcentral,
@@ -228,8 +228,8 @@ mapa_meso_mt <- ggplot() +
     data = mapa_meso_regcentral,
     aes(geometry = geom),
     fill = "white",
-    color = "grey80",
-    size = 0.01
+    color = "grey60",
+    size = 0.05
   ) +
   geom_sf(
     data = mapa_micro_regcentral,
@@ -300,7 +300,7 @@ mapa_micro_mt <- ggplot() +
     aes(geometry = geom),
     fill = "white",
     color = "grey50",
-    size = 0.01
+    size = 0.05
   ) +
   geom_sf(
     data = mapa_sm,
@@ -371,7 +371,7 @@ mapa_sm_mt <- ggplot() +
     aes(geometry = geom),
     fill = "white",
     color = "grey50",
-    size = 0.01
+    size = 0.05
   ) +
   geom_segment(
     data = base_sm_mt,
@@ -436,7 +436,7 @@ mapa_sm_central_mt <- ggplot() +
     aes(geometry = geom),
     fill = "white",
     color = "grey50",
-    size = 0.01
+    size = 0.05
   ) +
   geom_segment(
     data = base_sm_mt,
