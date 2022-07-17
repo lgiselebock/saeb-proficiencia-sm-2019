@@ -7,7 +7,7 @@ library(ggplot2)
 
 # BASE DE DADOS -----------------------------------------------------------
 
-### SAEB
+### SAEB --------------------------------------------------------------------
 
 saeb_rs_lp <- readr::read_rds("data/saeb_rs_lp.rds")
 
@@ -163,7 +163,7 @@ mapa_rs_lp <- ggplot() +
     data = mapa_rs,
     aes(geometry = geom),
     fill = "white",
-    color = "grey80",
+    color = "grey60",
     size = 0.01
   ) +
   geom_sf(
@@ -246,7 +246,7 @@ mapa_meso_lp <- ggplot() +
     aes(geometry = geom),
     fill = "white",
     color = "grey80",
-    size = 0.01
+    size = 0.05
   ) +
   geom_sf(
     data = mapa_micro_regcentral,
@@ -327,7 +327,7 @@ mapa_micro_lp <- ggplot() +
     aes(geometry = geom),
     fill = "white",
     color = "grey50",
-    size = 0.01
+    size = 0.05
   ) +
   geom_sf(
     data = mapa_sm,
@@ -572,7 +572,7 @@ geom_label(
 ggsave(
   filename = "mapa_rs_lp.png",
   plot = mapa_rs_lp,
-  path = "output/img/",
+  path = "output/img/lingua-portuguesa",
   width = 1800,
   height = 1800,
   units = "px",
@@ -585,7 +585,7 @@ ggsave(
 ggsave(
   filename = "mapa_meso_lp.png",
   plot = mapa_meso_lp,
-  path = "output/img/",
+  path = "output/img/lingua-portuguesa",
   width = 1800,
   height = 1800,
   units = "px",
@@ -598,7 +598,7 @@ ggsave(
 ggsave(
   filename = "mapa_micro_lp.png",
   plot = mapa_micro_lp,
-  path = "output/img/",
+  path = "output/img/lingua-portuguesa",
   width = 1800,
   height = 1800,
   units = "px",
@@ -611,7 +611,7 @@ ggsave(
 ggsave(
   filename = "mapa_sm_lp.png",
   plot = mapa_sm_lp,
-  path = "output/img/",
+  path = "output/img/lingua-portuguesa",
   width = 1800,
   height = 1800,
   units = "px",
@@ -624,7 +624,7 @@ ggsave(
 ggsave(
   filename = "mapa_sm_central_lp.png",
   plot = mapa_sm_central_lp,
-  path = "output/img/",
+  path = "output/img/lingua-portuguesa",
   width = 1800,
   height = 1800,
   units = "px",
